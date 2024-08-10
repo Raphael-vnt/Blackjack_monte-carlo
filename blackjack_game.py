@@ -55,7 +55,6 @@ class BlackjackGame:
                 info_round += f"Player hits: {hand}\n"
 
             if hand.value < 21 and len(hand.cards) == 2 and player_strategy(hand, self.dealer_hand.cards[0]) == 'D':
-                self.bet *= 2
                 list_bets[index_hands] = list_bets[index_hands] * 2
                 hand.add_card(self.deck.deal())
                 info_round += f"Player doubles: {hand}\n"
