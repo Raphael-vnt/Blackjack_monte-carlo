@@ -2,19 +2,6 @@
 ### Simulation of basic strategy on a game with 3 rounds
 
 
-```python
-game = BlackjackGame(min_bet=10, initial_bet=10, num_decks=6, reshuffle_pct=80)
-balance = 1000
-
-for _ in range(3):
-    result, info = game.play_round(basic_strategy)
-    balance += result
-    info = f"ROUND {_+1}\n" + info
-    info += f"New balance: {balance}\n"
-    info += "-" * 20 + '\n'
-    print(info)
-```
-
     ROUND 1
     Player's hand: Hand([5 of Diamonds, 7 of Diamonds])
     Dealer's hand: 4 of Hearts and [Hidden]
