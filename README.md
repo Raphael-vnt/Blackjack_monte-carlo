@@ -1,3 +1,7 @@
+## Abstract
+
+Development and implementation of basic blackjack strategy. Esperance calculation and comparison with a random strategy via Monte-Carlo simulation.
+
 
 ### Simulation of basic strategy on a game with 3 rounds
 
