@@ -429,6 +429,7 @@ def esperance_split_new(p_hand, c_hand, B, P,  dic_esperance_hit, prop, k_split)
 
     e = 0
     for s in inf_22 : 
+         #proba de passer de new_hand ->> s
         p = P.loc[new_hand][s]
         
         if p <= 0:
@@ -438,6 +439,8 @@ def esperance_split_new(p_hand, c_hand, B, P,  dic_esperance_hit, prop, k_split)
 
         if new_hand != 'A' :
             # Nouvelle main != As 
+
+            #inclus 
             e_h = dic_esperance_hit[s][c_hand]
             e_d = esperance_double(s, c_hand, B, P, e=False, split=True)
 
